@@ -1,147 +1,79 @@
-<!-- Informa ao navegador que o documento utiliza HTML5 -->
 <!DOCTYPE html>
-<!-- Define o português do Brasil como idioma principal -->
 <html lang="pt-BR">
-<!-- Contém as configurações e informações não visíveis da página -->
 <head>
-    <!-- Permite exibir corretamente acentos e caracteres especiais -->
     <meta charset="UTF-8">
-    <!-- Adapta a largura da página à tela de celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fornece aos mecanismos de busca uma descrição da página -->
-    <meta name="description" content="Perfil profissional de Felipe Alves de Oliveira, mestre em Sistemas e Computação e especialista em aplicações web e dados.">
-    <!-- Define o texto exibido na aba do navegador -->
-    <title>Felipe Alves de Oliveira | Perfil Profissional</title>
-    <!-- Carrega o arquivo responsável pela aparência da página -->
+    <meta name="description" content="Felipe Alves de Oliveira — especialista em aplicações web, bancos de dados e integração de dados, mestre em Sistemas e Computação pelo IME.">
+    <meta name="theme-color" content="#102a43">
+    <title>Felipe Alves de Oliveira | Tecnologia e Dados</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<!-- Inicia o conteúdo visível da página -->
 <body>
-    <!-- Agrupa a foto e as principais informações profissionais -->
-    <header class="cabecalho">
-        <!-- Exibe a foto; alt fornece uma descrição para leitores de tela -->
-        <img
-            class="foto-perfil"
-            src="https://media.licdn.com/dms/image/v2/D4D03AQG2QGWRxdeVbw/profile-displayphoto-crop_800_800/B4DZ3VdAmtH8AI-/0/1777402645543?e=1790812800&v=beta&t=evRoC2_d-c1lVrmjHU_WR6T-YlK-yyUp-mAvK0hEb4I"
-            alt="Imagem de perfil de Felipe Alves de Oliveira"
-        >
-
-        <!-- Agrupa os textos de apresentação -->
-        <div class="apresentacao">
-            <p class="saudacao">Olá, eu sou</p>
-            <h1>Felipe Alves de Oliveira</h1>
-            <p class="cargo">MSc, ITIL 4 e ISFS</p>
-            <p>Aplicações web, bancos de dados e mineração de dados</p>
-            <p>Rio de Janeiro, RJ</p>
+    <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo</a>
+    <header class="hero" id="inicio">
+        <div class="hero__decoracao hero__decoracao--um" aria-hidden="true"></div>
+        <div class="hero__decoracao hero__decoracao--dois" aria-hidden="true"></div>
+        <div class="hero__conteudo">
+            <div class="foto-moldura">
+                <img class="foto-perfil" src="https://media.licdn.com/dms/image/v2/D4D03AQG2QGWRxdeVbw/profile-displayphoto-crop_800_800/B4DZ3VdAmtH8AI-/0/1777402645543?e=1790812800&amp;v=beta&amp;t=evRoC2_d-c1lVrmjHU_WR6T-YlK-yyUp-mAvK0hEb4I" alt="Foto de Felipe Alves de Oliveira" width="240" height="240">
+                <span class="foto-moldura__status" aria-hidden="true"></span>
+            </div>
+            <div class="apresentacao">
+                <p class="destaque">Tecnologia • Dados • Inovação</p>
+                <h1>Felipe Alves<br>de Oliveira</h1>
+                <p class="resumo-hero">Transformo necessidades complexas em aplicações web e soluções de dados confiáveis, com visão analítica e foco em resultado.</p>
+                <div class="credenciais" aria-label="Credenciais profissionais"><span>MSc</span><span>ITIL 4</span><span>ISFS</span></div>
+                <div class="acoes">
+                    <a class="botao botao--principal" href="https://www.linkedin.com/in/ffelipeao" target="_blank" rel="noopener noreferrer">Ver LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a class="botao botao--secundario" href="#experiencia">Conhecer trajetória</a>
+                </div>
+            </div>
         </div>
     </header>
-
-    <!-- Cria o menu; cada link leva à seção indicada depois do símbolo # -->
     <nav class="menu" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#formacao">Formação</a>
-        <a href="#experiencia">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#contato">Contato</a>
+        <a href="#inicio" aria-label="Voltar ao início">FAO</a>
+        <div class="menu__links"><a href="#sobre">Sobre</a><a href="#experiencia">Trajetória</a><a href="#especialidades">Especialidades</a><a href="#contato">Contato</a></div>
     </nav>
-
-    <!-- Delimita o conteúdo principal do documento -->
-    <main class="conteudo">
-        <!-- Cria uma seção; seu id também funciona como destino do menu -->
-        <section id="sobre" class="cartao">
-            <h2>Sobre mim</h2>
-            <p>
-                Mestre em Sistemas e Computação pelo Instituto Militar de Engenharia (IME)
-                e bacharel em Sistemas de Informação. Atua com desenvolvimento de aplicações
-                web, bancos de dados, integração e análise de dados.
-            </p>
+    <main class="conteudo" id="conteudo">
+        <section class="secao sobre" id="sobre">
+            <div class="secao__titulo"><p class="eyebrow">Perfil</p><h2>Experiência que conecta<br>tecnologia e conhecimento</h2></div>
+            <div class="sobre__texto">
+                <p class="texto-grande">Mestre em Sistemas e Computação pelo Instituto Militar de Engenharia (IME) e bacharel em Sistemas de Informação.</p>
+                <p>Minha atuação reúne desenvolvimento de aplicações web, bancos de dados, integração e qualidade de dados. Também desenvolvo pesquisas voltadas à descoberta de conhecimento na Web de Dados e em estruturas de grafos.</p>
+                <div class="localizacao"><span aria-hidden="true">⌖</span> Rio de Janeiro, Brasil</div>
+            </div>
         </section>
-
-        <section id="formacao" class="cartao">
-            <h2>Formação acadêmica</h2>
-            <!-- Representa uma informação que pode ser compreendida de forma independente -->
-            <article>
-                <h3>Mestrado em Sistemas e Computação</h3>
-                <p class="informacao-secundaria">Instituto Militar de Engenharia (IME) — 2015–2018</p>
-                <p>
-                    Pesquisa em bancos de dados, Web de Dados, Web Semântica, Big Data e
-                    mineração de dados em grafos.
-                </p>
-            </article>
-            <article>
-                <h3>Bacharelado em Sistemas de Informação</h3>
-                <p class="informacao-secundaria">Universidade Estácio de Sá — 2014</p>
-            </article>
+        <section class="secao" id="experiencia">
+            <div class="secao__cabecalho"><div><p class="eyebrow">Trajetória</p><h2>Experiência e formação</h2></div><p>Uma carreira construída entre desenvolvimento de software, dados e pesquisa aplicada.</p></div>
+            <div class="linha-tempo">
+                <article class="trajetoria"><span class="trajetoria__marcador" aria-hidden="true"></span><p class="trajetoria__tipo">Experiência atual</p><h3>Central IT — Tecnologia em Negócios</h3><p class="trajetoria__subtitulo">Aplicações web • Rio de Janeiro</p><p>Desenvolvimento e análise de sistemas, com atuação em soluções web e dados.</p></article>
+                <article class="trajetoria"><span class="trajetoria__marcador" aria-hidden="true"></span><p class="trajetoria__tipo">Mestrado • 2015–2018</p><h3>Instituto Militar de Engenharia</h3><p class="trajetoria__subtitulo">Sistemas e Computação</p><p>Pesquisa em bancos de dados, Web Semântica, Big Data e mineração de dados em grafos.</p></article>
+                <article class="trajetoria"><span class="trajetoria__marcador" aria-hidden="true"></span><p class="trajetoria__tipo">Graduação • 2014</p><h3>Universidade Estácio de Sá</h3><p class="trajetoria__subtitulo">Bacharelado em Sistemas de Informação</p></article>
+            </div>
         </section>
-
-        <section id="experiencia" class="cartao">
-            <h2>Experiências e projetos</h2>
-            <article>
-                <h3>Central IT — Tecnologia em Negócios</h3>
-                <p class="informacao-secundaria">Aplicações web</p>
-                <p>
-                    Atuação profissional no desenvolvimento e na análise de sistemas e
-                    aplicações web.
-                </p>
-            </article>
-            <article>
-                <h3>Pesquisa em Web de Dados</h3>
-                <p class="informacao-secundaria">Instituto Militar de Engenharia</p>
-                <p>
-                    Desenvolvimento do MRAR+, algoritmo para mineração de regras de associação
-                    multirrelação em datasets interligados.
-                </p>
-            </article>
+        <section class="secao" id="especialidades">
+            <div class="secao__cabecalho"><div><p class="eyebrow">Competências</p><h2>Especialidades</h2></div><p>Conhecimento técnico aplicado à construção, organização e análise de soluções digitais.</p></div>
+            <div class="grade-especialidades">
+                <article class="especialidade"><span class="especialidade__numero">01</span><h3>Desenvolvimento web</h3><p>Aplicações e sistemas web com PHP, HTML, CSS, JavaScript e práticas modernas de desenvolvimento.</p></article>
+                <article class="especialidade"><span class="especialidade__numero">02</span><h3>Dados e bancos</h3><p>SQL, PostgreSQL, integração, modelagem, validação e qualidade de dados.</p></article>
+                <article class="especialidade"><span class="especialidade__numero">03</span><h3>Pesquisa aplicada</h3><p>Mineração de dados, grafos, Web de Dados, Web Semântica e descoberta de conhecimento.</p></article>
+                <article class="especialidade"><span class="especialidade__numero">04</span><h3>Processos e segurança</h3><p>ITIL 4, fundamentos de segurança da informação, DevOps e métodos ágeis.</p></article>
+            </div>
         </section>
-
-        <section id="habilidades" class="cartao">
-            <h2>Habilidades</h2>
-            <!-- Cria uma lista não ordenada de habilidades -->
-            <ul class="lista-habilidades">
-                <li>Aplicações web</li>
-                <li>Bancos de dados</li>
-                <li>Integração de dados</li>
-                <li>Mineração de dados</li>
-                <li>Web de Dados</li>
-                <li>Web Semântica</li>
-                <li>Big Data</li>
-                <li>ITIL 4</li>
-            </ul>
+        <section class="secao projeto-destaque" id="pesquisa">
+            <div><p class="eyebrow">Pesquisa em destaque</p><h2>MRAR+</h2></div>
+            <div class="projeto-destaque__conteudo"><p class="texto-grande">Mineração de regras de associação multirrelação na Web de Dados.</p><p>Algoritmo criado para identificar conhecimento novo em diferentes datasets interligados, explorando relações que métodos tradicionais não alcançam.</p><a class="link-seta" href="http://lattes.cnpq.br/0510166925160914" target="_blank" rel="noopener noreferrer">Ver produção acadêmica <span aria-hidden="true">→</span></a></div>
         </section>
-
-        <section id="contato" class="cartao">
-            <h2>Contato</h2>
-            <!-- Identifica semanticamente as informações de contato -->
-            <address>
-                <p>
-                    LinkedIn:
-                    <!-- Abre o site em outra aba e protege o acesso à página original -->
-                    <a href="https://www.linkedin.com/in/ffelipeao" target="_blank" rel="noopener noreferrer">
-                        linkedin.com/in/ffelipeao
-                    </a>
-                </p>
-                <p>
-                    Currículo Lattes:
-                    <a href="http://lattes.cnpq.br/0510166925160914" target="_blank" rel="noopener noreferrer">
-                        lattes.cnpq.br/0510166925160914
-                    </a>
-                </p>
-                <p>
-                    ORCID:
-                    <a href="https://orcid.org/0000-0003-4011-3504" target="_blank" rel="noopener noreferrer">
-                        0000-0003-4011-3504
-                    </a>
-                </p>
-            </address>
+        <section class="secao contato" id="contato">
+            <p class="eyebrow">Contato</p><h2>Vamos trocar ideias?</h2><p>Conheça meu trabalho, minha trajetória profissional e minha produção acadêmica.</p>
+            <div class="contato__links">
+                <a href="https://www.linkedin.com/in/ffelipeao" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><small>Perfil profissional</small><strong aria-hidden="true">↗</strong></a>
+                <a href="http://lattes.cnpq.br/0510166925160914" target="_blank" rel="noopener noreferrer"><span>Currículo Lattes</span><small>Produção acadêmica</small><strong aria-hidden="true">↗</strong></a>
+                <a href="https://orcid.org/0000-0003-4011-3504" target="_blank" rel="noopener noreferrer"><span>ORCID</span><small>Registro de pesquisador</small><strong aria-hidden="true">↗</strong></a>
+            </div>
         </section>
     </main>
-
-    <footer class="rodape">
-        <!-- O JavaScript preencherá o span com o ano atual -->
-        <p>&copy; <span id="ano-atual"></span> Felipe Alves de Oliveira. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- Carrega o JavaScript após o restante do conteúdo -->
+    <footer class="rodape"><p>Felipe Alves de Oliveira</p><p>© <span id="ano-atual"></span> • Rio de Janeiro, Brasil</p></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
