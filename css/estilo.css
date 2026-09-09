@@ -160,31 +160,6 @@ address {
     font-style: normal; /* Remove o itálico aplicado automaticamente */
 }
 
-/* Define a aparência e o comportamento visual do botão */
-button {
-    padding: 11px 20px;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer; /* Exibe o cursor que indica uma área clicável */
-    background-color: var(--cor-principal);
-    border: 0; /* Remove a borda-padrão */
-    border-radius: 7px;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-button:hover,
-button:focus {
-    background-color: var(--cor-principal-escura);
-    transform: translateY(-2px); /* Move o botão levemente para cima */
-}
-
-.mensagem {
-    min-height: 25px; /* Reserva espaço antes de a mensagem aparecer */
-    color: var(--cor-principal-escura);
-    font-weight: bold;
-}
-
 .rodape {
     padding: 22px;
     color: #ffffff;
