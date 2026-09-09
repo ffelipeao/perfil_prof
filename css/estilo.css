@@ -321,8 +321,9 @@ a {
 .trajetoria {
   position: relative;
   display: grid;
-  grid-template-columns: 180px 1fr 1fr;
-  gap: 28px;
+  grid-template-columns: 170px minmax(240px, 0.9fr) minmax(280px, 1.1fr);
+  align-items: start;
+  gap: clamp(24px, 4vw, 52px);
   padding: 0 0 48px;
 }
 .trajetoria:last-child {
@@ -352,13 +353,15 @@ a {
   font-size: 1.16rem;
   line-height: 1.4;
 }
-.trajetoria p:last-child {
+.trajetoria__identificacao {
+  min-width: 0;
+}
+.trajetoria__descricao {
   margin: 0;
   color: var(--texto-claro);
 }
 .trajetoria__subtitulo {
-  grid-column: 2;
-  margin: -20px 0 0;
+  margin: 7px 0 0;
   color: var(--texto-claro);
   font-size: 0.86rem;
 }
@@ -618,7 +621,7 @@ a {
   .trajetoria {
     grid-template-columns: 150px 1fr;
   }
-  .trajetoria p:last-child {
+  .trajetoria__descricao {
     grid-column: 2;
   }
   .grade-certificacoes {
@@ -681,10 +684,8 @@ a {
     grid-template-columns: 1fr;
     gap: 7px;
   }
-  .trajetoria__subtitulo,
-  .trajetoria p:last-child {
+  .trajetoria__descricao {
     grid-column: 1;
-    margin-top: 0;
   }
   .projeto-destaque {
     margin: 55px 0;
